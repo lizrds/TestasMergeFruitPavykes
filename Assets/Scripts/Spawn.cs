@@ -21,6 +21,7 @@ public class Spawn : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
             SpawnMechanic();
+
         }
     }
 
