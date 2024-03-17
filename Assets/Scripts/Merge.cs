@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class Merge : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText;
-    public int score;
+
     public GameObject fruitAfterMerging;
     private bool isReadyToMerge = true;
     public float mergeCooldown = 0.5f;
@@ -21,7 +20,7 @@ public class Merge : MonoBehaviour
             Destroy(gameObject);
             GameObject newFruit = Instantiate(fruitAfterMerging, spawnPosition, Quaternion.identity);
             newFruit.GetComponent<Merge>().StartMergeCooldown();
-            score++;
+
         }
     }
     public void StartMergeCooldown()
